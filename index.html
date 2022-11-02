@@ -19,7 +19,7 @@
           <span class="navbar-text">
             Project Tracker
           </span>
-          <span id="current-time">
+          <span class="navbar-text" id="current-time">
             Date & Time:
           </span>
         </div>
@@ -28,18 +28,18 @@
     <!-- adding card to hold instructions and button to open modal -->
     <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">How to;</h5>
           <div class="card-header">
-            Featured
+            Click the button below and provide the following information into the form provided.
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A project title</li>
+            <li class="list-group-item">The project topic</li>
+            <li class="list-group-item">Due date</li>
           </ul>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Launch static backdrop modal
+              New Project
             </button>
         </div>
       </div>
@@ -49,21 +49,21 @@
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <h5 class="modal-title" id="staticBackdropLabel">Adding Project</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Title:</span>
+                    <input type="text" class="form-control">
                 </div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
+                <select class="form-select">
+                    <option selected>Project Type</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
-                Date: <div id="datepicker"></div>
+                Due date: <div id="datepicker"></div>
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
